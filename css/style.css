@@ -1,0 +1,183 @@
+
+
+.ide {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border: 1px solid grey;
+  background: #F1F1F1;
+
+}
+
+/* Input to write the answear */
+#exerciseAnswer {
+  border:1px solid grey ;
+    margin: 50px 0px 50px 0px;
+    border-radius: 10px;
+}    /* Input to write the answear  -- finish */
+
+
+/* Area to show the correct answear */
+
+.seeAnswer {
+  width: 517.600px;
+  height: 465px;
+  background-color: white;
+  margin: 50px 0px 0px 0px;
+  border-radius: 10px;
+    border: 1px solid grey ;
+} /* Area to show the correct answear  --finish */
+
+/* Exercise question */
+
+.exercise  {
+  margin: 50px 0px 50px 30px;
+}
+
+.exercise h1 {
+  font-family: Verdana;
+  color: #899090;
+  font-size: 38px;
+  font-weight: normal;
+}
+.exercise h3 {
+  font-family: Verdana;
+  color: #899090;
+  font-size: 15px;
+  font-weight: normal;
+  padding-top:0px;
+}
+
+.exercise p {
+  font-family: Verdana;
+  color: #899090;
+  font-size: 18px;
+  font-weight: normal;
+} /* Exercise question --end*/
+
+
+
+/* Button div */
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+
+
+
+/* Run code button */
+
+#run{
+  background-color: #212121;
+  color: #909089;
+  border: 0px;
+  padding: 10px 30px;
+}   /* Run code button --finish*/
+
+
+
+
+/* Cheat button */
+
+#cheat {
+  background-color: #212121;
+  color: #909089;
+  border: 0px;
+  padding: 10px 30px;
+} /* Cheat button --end*/
+
+html,body{
+  background: #212121;
+  padding: 50px 0;
+  margin:0;
+
+  /* font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
+  margin:0;
+  padding:0; */
+
+}
+
+.nav {
+
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  padding-left: 0px;
+  padding-bottom: 30px;
+  border-bottom:2px solid #F1F1F1;
+  margin-bottom: 100px;
+}
+
+.nav * {
+  box-sizing: border-box;
+  transition: all 0.35 ease;
+}
+
+.nav li {
+  /* display: inline-block; */
+  list-style: outside none none;
+  margin: .5em 1em;
+  padding: 0;
+}
+
+.nav a {
+  padding: .5em 0.8em;
+  color: rgba(255,255,255,0.5);
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav a:before,
+.nav a:after {
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  content: '';
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+
+.nav a:before {
+  right: 0;
+  top: 0;
+  border-right: 3px solid red;
+  border-top: 3px solid red;
+  transform: translate(-100%, 50%);
+}
+
+
+.nav a:after {
+  left: 0;
+  bottom: 0;
+  border-left:3px solid red;
+  border-bottom:  3px solid red;
+  transform: translate(100%, -50%);
+}
+
+.nav a:hover:before,
+.nav a:hover:after {
+  transform:translate(0%, 0%);
+  opacity: 1;
+}
+
+
+@media all and (max-width: 600px) {
+
+  .nav {
+    flex-wrap: wrap;
+  }
+
+  .nav > li {
+    flex-basis: 50%;
+  }
+}
