@@ -38,6 +38,7 @@ function show_answer()
             {
                 var responseText = rawFile.responseText;
                 document.getElementById("correct").innerHTML = responseText
+                eval(responseText)
             }
         }
     }
