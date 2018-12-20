@@ -26,6 +26,24 @@ function run() {
 
 }
 
+function show_answer()
+{
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", 'js/answer.js', false);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                var responseText = rawFile.responseText;
+                document.getElementById("correct").innerHTML = responseText
+            }
+        }
+    }
+    rawFile.send(null);
+}
+
 // // Check if the response array is equal to the exercises array
 //   // for (var i = 0; i < exercises.length; i++) {
 //   //   for (var i = 0; i < response.length; i++){
